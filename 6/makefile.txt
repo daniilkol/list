@@ -1,0 +1,11 @@
+prog.exe: main.o solve.o student.o list.o
+	g++ -g -c main.o solve.o student.o list.o -o prog.exe
+main.o: main.cpp student_list.h student_node.h student.h
+	g++ -g -c main.cpp
+solve.o: solve.cpp student_list.h student_node.h student.h
+	g++ -g -c solve.cpp
+student.o: student.cpp student.h
+	g++ -g -c student.cpp
+list.o: list.cpp student_list.h student_node.h student.h
+	g++ -g -c list.cpp
+clean: rm -f main.o solve.o student.o list.o prog.exe

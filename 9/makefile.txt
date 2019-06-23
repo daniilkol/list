@@ -1,0 +1,5 @@
+prog.exe: main.o
+	g++ -g -c main.o -o prog.exe
+main.o: main.cpp student_list.h student_node.h student.h
+	g++ -g -c main.cpp
+clean: rm -f main.o prog.exe

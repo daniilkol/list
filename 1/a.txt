@@ -1,0 +1,14 @@
+abcabc 2
+abcc 2
+bcaacb 2
+bca 2
+abcabc 2
+bca 2
+def 4
+abcabc 2
+abcc 2
+bcaacb 2
+bca 2
+abcabc 2
+bca 2
+def 4
